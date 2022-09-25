@@ -1,4 +1,31 @@
 
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+p{
+    margin: 0;
+    font-size: 20px;
+}
+
+
 .switch {
     width: 80px;
     height: 40px;
@@ -19,19 +46,47 @@
     box-shadow: 
         inset 4px 4px 4px rgb(255,255,255),
         inset -14px -14px 10px rgb(195 193 198 / 80%);
-
-}
-
-.dark{
-    background-color: rgb(57, 57, 57);
     transition: 0.3s;
 }
 
 
+.dark{
+    background-color: rgb(57, 57, 57);
+    transition: 0.3s;
+    
+}
+
+.dark>*{
+    color: white;
+}
+
+.moon{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 white;
+    position: absolute;
+    top:5px;
+    left:45px;
+}
+
+.dark .flicker{
+    transform: translateX(40px);
+}
 
 
 
+.main{
+    height: 80vh;
+}
+
+.main-text{
+    width: 50%;
+    padding: 30px;
+}
 
 
+@media only screen and (min-width: 970px){
 
+}
 
