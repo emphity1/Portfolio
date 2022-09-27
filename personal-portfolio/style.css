@@ -14,8 +14,9 @@ header{
     padding: 20px;
 }
 
-.h1 {
-    font-size: 70px;
+h1 {
+    color: rgba(12, 105, 0, 0.816);
+    font-size: 80px;
     line-height: 70px;
     font-weight: 300;
     margin: 10px 0;
@@ -23,6 +24,24 @@ header{
 p{
     margin: 0;
     font-size: 20px;
+}
+
+a{
+    color: rgba(12, 105, 0, 0.816);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight:600;
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+.dark a {
+    color: rgb(142, 194, 137);
+
+}
+.dark h1{
+    color: rgb(142, 194, 137);
 }
 
 
@@ -81,12 +100,43 @@ p{
 }
 
 .main-text{
-    width: 50%;
+    
     padding: 30px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    background-color: rgb(111, 151, 107);
+    margin-top:  80vh
+}
+.dark footer{
+    background-color: rgb(142, 194, 137);
+}
+
+
+
+.hero-img{
+    position: relative;
+    width: 50%;
+    height: 350px;
+
+}
+
+.cube{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: pink;
+    transform: rotate(-25deg) skew(25deg);
 }
 
 
 @media only screen and (min-width: 970px){
+    .main-text{
+        width: 50%;
+    }
 
 }
 
