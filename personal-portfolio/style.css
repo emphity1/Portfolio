@@ -8,6 +8,10 @@ body{
     padding: 0;
 }
 
+
+/*
+    Main page design
+*/
 header{
     display: flex;
     justify-content: flex-end;
@@ -23,11 +27,11 @@ h1 {
 }
 p{
     margin: 0;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 a{
-    color: rgba(12, 105, 0, 0.816);
+    color: rgba(0, 0, 0, 0.816);
     font-size: 20px;
     text-decoration: none;
     font-weight:600;
@@ -37,7 +41,7 @@ a{
 }
 
 .dark a {
-    color: rgb(142, 194, 137);
+    color: rgb(255, 255, 255);
 
 }
 .dark h1{
@@ -131,6 +135,58 @@ footer{
     background-color: pink;
     transform: rotate(-25deg) skew(25deg);
 }
+
+/*
+    Icons personalization
+*/
+.cv{
+    display: flex;
+}
+
+
+.cv a{
+    display: flex;
+    color: rgba(12, 105, 0, 0.816);
+}
+
+.cv i{
+    padding-right: 5px;
+    display: flex;
+    padding-top: 33px;
+    color: rgba(12, 105, 0, 0.816);
+}
+
+
+.github{
+    display: flex;
+    padding-left: 20px;
+}
+.github a{
+    display: flex;
+    color: rgba(12, 105, 0, 0.816);
+}
+.github i{
+    padding-top: 33px;
+    padding-right: 5px;
+    display: flex;
+    color: rgba(12, 105, 0, 0.816);
+}
+
+.dark .github >*{
+    color: rgb(142, 194, 137); 
+}
+.dark .cv >*{
+    color: rgb(142, 194, 137);
+}
+
+
+.info{
+    display: inline-flex;
+    
+}
+
+
+
 
 
 @media only screen and (min-width: 970px){
