@@ -147,6 +147,7 @@ footer{
     width: 80px;
     height: 80px;
     transform: rotate(-25deg) skew(25deg);
+    
 
 }
 
@@ -176,13 +177,19 @@ footer{
     background-image: url("img/sql.png");
     background-size: cover;
     background-color: rgba(3, 208, 253, 0.102);
-    box-shadow: -120px 120px 20px rgb(50 50 50/ 15%);
-/*
+    /*
+     to finish.....
+    */
     animation-name: float;
     animation-iteration-count: infinite;
-    animation-duration: 5s;
-*/
+    animation-duration: 0.9s;
+    animation-direction: alternate;
+
 }
+#sql{
+    box-shadow: -120px 120px 20px rgb(50 50 50/ 15%);
+}
+
 .dark #sql{
     filter: brightness(150%);
     box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.527);
@@ -202,6 +209,7 @@ footer{
     background-size: cover;
     background-color: rgb(175, 211, 251);
     box-shadow: -100px 100px 20px rgb(50 50 50/ 15%);
+    
 }
 .dark #c{
     background-color: rgba(1, 113, 188, 0.687);
@@ -354,6 +362,21 @@ footer{
     padding-top: 30px;
 }
 
+
+
+/*
+     to finish.....
+    */
+@keyframes float {
+    from{
+        bottom: 50px;
+    }
+    to{
+        bottom: 0px;
+    }
+}
+    
+    
 
 
 
