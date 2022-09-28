@@ -4,30 +4,32 @@ body{
     font-family: 'Poppins', sans-serif;
 
     transition: 0.3s;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 
 /*
-    Main page design
+    ------ Main page design ------
 */
 header{
+
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
+    padding: 0px;
 }
 
-h1 {
+h1{
     color: rgba(12, 105, 0, 0.816);
     font-size: 80px;
     line-height: 70px;
-    font-weight: 300;
+    font-weight: 500;
     margin: 10px 0;
 }
 p{
     margin: 0;
-    font-size: 25px;
+    font-size: 22px;
+    font-weight: 100;
 }
 
 a{
@@ -40,16 +42,9 @@ a{
     
 }
 
-.dark a {
-    color: rgb(255, 255, 255);
-
-}
-.dark h1{
-    color: rgb(142, 194, 137);
-}
-
-
 .switch {
+    margin-top: 20px;
+    margin-right: 20px;
     width: 80px;
     height: 40px;
     background-color: rgb(62, 61, 61);
@@ -72,15 +67,22 @@ a{
     transition: 0.3s;
 }
 
+.main{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-.dark{
-    background-color: rgb(57, 57, 57);
-    transition: 0.3s;
-    
 }
 
-.dark>*{
-    color: white;
+.main-text{
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+.contact{
+    padding-top: 20px;
 }
 
 .moon{
@@ -93,51 +95,219 @@ a{
     left:45px;
 }
 
-.dark .flicker{
-    transform: translateX(40px);
-}
-
-
-
-.main{
-    height: 80vh;
-}
-
-.main-text{
-    
-    padding: 30px;
-}
-
 footer{
     display: flex;
     justify-content: center;
-    padding: 100px;
+    padding: 80px;
     background-color: rgb(111, 151, 107);
-    margin-top:  80vh
+    margin-top: 0vh
+}
+
+
+/*
+        ---------- DARK MODE ----------
+*/
+.dark .flicker{
+    transform: translateX(40px);
 }
 .dark footer{
-    background-color: rgb(142, 194, 137);
+    background-color: rgba(86, 119, 83, 0.722);
+}
+.dark{
+    background-color: rgb(57, 57, 57);
+    transition: 0.3s; 
+}
+.dark>*{
+    color: white;
+}
+.dark a {
+    color: rgb(255, 255, 255);
+}
+.dark h1{
+    color: rgb(86, 119, 83);
 }
 
 
 
-.hero-img{
+
+/*
+    ---- CUBES ----
+*/
+
+.hero-image {
     position: relative;
     width: 50%;
     height: 350px;
-
-}
-
+    display: block;
+    margin-bottom: 100px;
+  }
+  
 .cube{
     position: absolute;
     width: 80px;
     height: 80px;
-    background-color: pink;
     transform: rotate(-25deg) skew(25deg);
+
 }
 
+.cube::before{
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 100%;
+    transform: skewY(-45deg);
+    left: -20px;
+    bottom: -10px;
+
+}
+.cube::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 21px;
+    transform: skewX(-45deg);
+    left: -10px;
+    bottom: -20px;
+}
+
+#sql{
+    left: 50px;
+    bottom:0px;
+    background-image: url("img/sql.png");
+    background-size: cover;
+    background-color: rgba(3, 208, 253, 0.102);
+    box-shadow: -120px 120px 20px rgb(50 50 50/ 15%);
 /*
-    Icons personalization
+    animation-name: float;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+*/
+}
+.dark #sql{
+    filter: brightness(150%);
+    box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.527);
+}
+#sql::before{
+    background-color: rgba(0, 189, 231, 0.227);
+}
+#sql::after{
+    background-color: rgba(1, 79, 97, 0.642);
+}
+
+
+#c{
+    left: 110px;
+    top: 30px;
+    background-image: url("img/c.svg");
+    background-size: cover;
+    background-color: rgb(175, 211, 251);
+    box-shadow: -100px 100px 20px rgb(50 50 50/ 15%);
+}
+.dark #c{
+    background-color: rgba(1, 113, 188, 0.687);
+    filter: brightness(110%);
+    box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.527);
+}
+#c::before{
+    background-color: rgb(123, 139, 178);
+}
+#c::after{
+    background-color: rgb(64, 64, 89);
+}
+
+
+#godot{
+    left: 280px;
+    top: 180px;
+    background-image: url("img/godot.png");
+    background-size: cover;
+    background-color: rgba(0, 149, 241, 0.385);
+    box-shadow: -100px 100px 20px rgb(50 50 50/ 15%);
+}
+.dark #godot{
+    filter: brightness(130%);
+    box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.527);
+}
+#godot::before{
+    background-color: rgba(0, 84, 148, 0.548);
+}
+#godot::after{
+    background-color: rgba(1, 14, 45, 0.852);
+}
+
+#html{
+    left: 440px;
+    bottom: 20px;
+    background-image: url("img/html-square.png");
+    background-size: cover;
+    background-color: rgba(167, 0, 189, 0.604);
+    box-shadow: -100px 100px 20px rgb(50 50 50/ 15%);
+}
+.dark #html{
+    filter: brightness(130%);
+    box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.527);
+}
+#html::before{
+    background-color: rgba(122, 0, 138, 0.434);
+}
+#html::after{
+    background-color: rgba(122, 0, 138, 0.768);
+}
+
+
+
+#css{
+    left: 590px;
+    bottom: 130px;
+    background-image: url("img/css-square.png");
+    background-size: cover;
+    background-color: rgba(68, 173, 248, 0.604);
+    box-shadow: -140px 140px 20px rgb(50 50 50/ 15%);
+}
+.dark #css{
+    filter: brightness(130%);
+    box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.527);
+}
+#css::before{
+    background-color: rgba(53, 132, 189, 0.604);
+}
+#css::after{
+    background-color: rgba(50, 124, 176, 0.813);
+}
+
+#js{
+    left: 750px;
+    bottom: 240px;
+    background-image: url("img/javascript-square.png");
+    background-size: cover;
+    background-color: rgba(255, 231, 12, 0.923);
+    box-shadow: -180px 180px 20px rgb(50 50 50/ 15%);
+}
+.dark #js{
+    filter: brightness(130%);
+    box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.527);
+}
+#js::before{
+    background-color:  rgba(194, 175, 10, 0.923);
+}
+#js::after{
+    background-color:  rgba(128, 116, 16, 0.923);
+}
+
+
+.icon-pack{
+    display: flex;
+    position: relative;
+    top: 400px;
+    left: 10px;
+}
+
+
+
+
+
+/*
+    ---- Icons personalization ----
 */
 .cv{
     display: flex;
@@ -173,16 +343,15 @@ footer{
 }
 
 .dark .github >*{
-    color: rgb(142, 194, 137); 
+    color: rgb(108, 148, 105);
 }
 .dark .cv >*{
-    color: rgb(142, 194, 137);
+    color: rgb(108, 148, 105);
 }
-
 
 .info{
     display: inline-flex;
-    
+    padding-top: 30px;
 }
 
 
@@ -195,4 +364,11 @@ footer{
     }
 
 }
+
+@media only screen and (max-width: 1200px){
+    .hero-image{
+        display: none;
+    }
+}
+
 
