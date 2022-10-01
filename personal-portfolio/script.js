@@ -32,15 +32,15 @@ function slideDown(){
 
 //SQL
 sql.addEventListener('mouseover', function(){
-    sql.style.bottom = 20 + 'px';
+    sql.style.bottom = 30 + 'px';
 });
 sql.addEventListener('mouseleave', function(){
-    sql.style.bottom = -20 + 'px';
+    sql.style.bottom = 0 + 'px';
 });
 
 //C
 c.addEventListener('mouseover', function(){
-    c.style.bottom = 300 + 'px';
+    c.style.bottom = 310 + 'px';
 });
 c.addEventListener('mouseleave', function(){
     c.style.bottom = 280 + 'px';
@@ -48,7 +48,7 @@ c.addEventListener('mouseleave', function(){
 
 //Godot
 godot.addEventListener('mouseover', function(){
-    godot.style.bottom = 160 + 'px'
+    godot.style.bottom = 170 + 'px'
 });
 godot.addEventListener('mouseleave', function(){
     godot.style.bottom = 140 + 'px'
@@ -57,7 +57,7 @@ godot.addEventListener('mouseleave', function(){
 
 //html
 html.addEventListener('mouseover', function(){
-    html.style.bottom = 40 + 'px'
+    html.style.bottom = 50 + 'px'
 });
 html.addEventListener('mouseleave', function(){
     html.style.bottom = 20 + 'px'
@@ -65,7 +65,7 @@ html.addEventListener('mouseleave', function(){
 
 //css
 css.addEventListener('mouseover', function(){
-    css.style.bottom = 150 + 'px'
+    css.style.bottom = 160 + 'px'
 });
 css.addEventListener('mouseleave', function(){
     css.style.bottom = 130 + 'px'
@@ -74,10 +74,10 @@ css.addEventListener('mouseleave', function(){
 
 //js
 js.addEventListener('mouseover', function(){
-    js.style.bottom = 260 + 'px'
+    js.style.bottom = 270 + 'px'
 
 });
 js.addEventListener('mouseleave', function(){
-    js.style.bottom = 249 + 'px'
+    js.style.bottom = 240 + 'px'
 
 });
