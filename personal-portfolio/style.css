@@ -173,22 +173,21 @@ footer{
 }
 
 
-/*
-        ----- Anim cubes -----
-*/
-
   
 
 /*
     ----- Just cubes ----
+    Each cube has its own design, both in dark and light screen
+    Cubes and shadows are not connected, they are  separated.
 */
 #sql{
     left: 50px;
     bottom:0px;
-    background-image: url("img/sql.png");
     background-size: cover;
+    background-image: url("img/sql.png");
     background-color: rgba(3, 208, 253, 0.102);
     /*box-shadow: -120px 120px 20px rgb(50 50 50/ 15%);*/
+    transition: all 0.5s;
     
 }
 #ShadowSql{
@@ -199,29 +198,35 @@ footer{
 }
 
 
-.dark #sql{
+.dark #ShadowSql{
     filter: brightness(150%);
-    box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.527);
+    box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.527);
+
 }
+
 #sql::before{
     background-color: rgba(0, 189, 231, 0.227);
 }
 #sql::after{
-    background-color: rgba(1, 79, 97, 0.642);
+    background-color: rgba(0, 45, 56, 0.642);
 }
 
 
 #c{
     left: 110px;
-    top: 30px;
+    bottom:280px;
     background-image: url("img/c.svg");
     background-size: cover;
-    background-color: rgb(175, 211, 251);
-    box-shadow: -100px 100px 20px rgb(50 50 50/ 15%);
-    
+    background-color: rgb(83, 118, 158);
+    transition: all 0.5s;
 }
-.dark #c{
-    background-color: rgba(1, 113, 188, 0.687);
+#ShadowC{
+    left: 110px;
+    bottom:230px;
+    box-shadow: -120px 120px 20px rgb(50 50 50/ 15%); 
+    z-index: -2; 
+}
+.dark #ShadowC{
     filter: brightness(110%);
     box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.527);
 }
@@ -235,21 +240,32 @@ footer{
 
 #godot{
     left: 280px;
-    top: 180px;
+    bottom: 140px;
     background-image: url("img/godot.png");
     background-size: cover;
     background-color: rgba(0, 149, 241, 0.385);
-    box-shadow: -100px 100px 20px rgb(50 50 50/ 15%);
+    transition: all 0.5s;
 }
-.dark #godot{
+#ShadowGodot{
+    left: 280px;
+    top: 180px;
+    box-shadow: -100px 100px 20px rgb(50 50 50/ 15%);
+    transition: none;
+    z-index: -2; 
+}
+.dark #ShadowGodot{
+    z-index: -2; 
     filter: brightness(130%);
     box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.527);
+    transition: none;
 }
 #godot::before{
     background-color: rgba(0, 84, 148, 0.548);
+    transition: none;
 }
 #godot::after{
     background-color: rgba(1, 14, 45, 0.852);
+    transition: none;
 }
 
 #html{
@@ -258,9 +274,16 @@ footer{
     background-image: url("img/html-square.png");
     background-size: cover;
     background-color: rgba(167, 0, 189, 0.604);
+    transition: all 0.5s;
+}
+#ShadowHtml{
+    z-index: -2; 
+    left: 440px;
+    bottom: 20px;
     box-shadow: -100px 100px 20px rgb(50 50 50/ 15%);
 }
-.dark #html{
+.dark #ShadowHtml{
+    z-index: -2; 
     filter: brightness(130%);
     box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.527);
 }
@@ -279,9 +302,16 @@ footer{
     background-image: url("img/css-square.png");
     background-size: cover;
     background-color: rgba(68, 173, 248, 0.604);
+    transition: all 0.5s;
+}
+#ShadowCss{
+    z-index: -2; 
+    left: 590px;
+    bottom: 130px;
     box-shadow: -140px 140px 20px rgb(50 50 50/ 15%);
 }
-.dark #css{
+.dark #ShadowCss{
+    z-index: -2; 
     filter: brightness(130%);
     box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.527);
 }
@@ -298,9 +328,16 @@ footer{
     background-image: url("img/javascript-square.png");
     background-size: cover;
     background-color: rgba(255, 231, 12, 0.923);
+    transition: all 0.5s;
+}
+#ShadowJs{
+    z-index: -2; 
+    left: 750px;
+    bottom: 240px;
     box-shadow: -180px 180px 20px rgb(50 50 50/ 15%);
 }
-.dark #js{
+.dark #ShadowJs{
+    z-index: -2; 
     filter: brightness(130%);
     box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.527);
 }
