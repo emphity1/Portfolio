@@ -146,8 +146,9 @@ footer{
     position: absolute;
     width: 80px;
     height: 80px;
-    transform: rotate(-25deg) skew(25deg);
+
     
+    transform: rotate(-25deg) skew(25deg);
 
 }
 
@@ -171,24 +172,32 @@ footer{
     bottom: -20px;
 }
 
+
+/*
+        ----- Anim cubes -----
+*/
+
+  
+
+/*
+    ----- Just cubes ----
+*/
 #sql{
     left: 50px;
     bottom:0px;
     background-image: url("img/sql.png");
     background-size: cover;
     background-color: rgba(3, 208, 253, 0.102);
-    /*
-     to finish.....
-    */
-    animation-name: float;
-    animation-iteration-count: infinite;
-    animation-duration: 0.9s;
-    animation-direction: alternate;
+    /*box-shadow: -120px 120px 20px rgb(50 50 50/ 15%);*/
+    
+}
+#ShadowSql{
+    left: 50px;
+    bottom:-20px;
+    box-shadow: -120px 120px 20px rgb(50 50 50/ 15%); 
+    z-index: -2;   
+}
 
-}
-#sql{
-    box-shadow: -120px 120px 20px rgb(50 50 50/ 15%);
-}
 
 .dark #sql{
     filter: brightness(150%);
@@ -364,21 +373,9 @@ footer{
 
 
 
-/*
-     to finish.....
-    */
-@keyframes float {
-    from{
-        bottom: 50px;
-    }
-    to{
-        bottom: 0px;
-    }
-}
+
     
     
-
-
 
 
 @media only screen and (min-width: 970px){
@@ -388,7 +385,7 @@ footer{
 
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1000px){
     .hero-image{
         display: none;
     }
